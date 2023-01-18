@@ -1,0 +1,78 @@
+* {
+  background: #E5E5E5;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+}
+.logo {
+  padding-top: 10px;
+  margin-left: 10px;
+  width: 10%;
+}
+main {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 80px;
+}
+.text {
+  border: none;
+  color: #0A3871;
+  margin-top: 90px;
+  text-transform: lowercase;
+  outline: none;
+}
+::placeholder {
+  color: #0A3871;
+}
+.textview {
+  background: #FFFFFF;
+  background-image: url(imagenes/Muñeco.png);
+  background-repeat: no-repeat;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  color: #0A3871;
+  margin-left: 98px;
+  margin-top: 20px;
+  padding-left: 20px;
+  position: fixed;
+  border: none;
+  outline: none;
+}
+.buttons {
+  display: flex;
+  margin-top: 20px;
+}
+.encrypt {
+  width: 328px;
+  height: 67px;
+  background: #0A3871;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+}
+.decrypt {
+  width: 328px;
+  height: 67px;
+  background: #D8DFE8;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: #0A3871;
+  font-size: 16px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.copy {
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  width: 336px;
+  height: 67px;
+  color: #0A3871;
+  position: absolute;
+  margin-top: 402px;
+  margin-left: 100px;
+  cursor: pointer;
+}
