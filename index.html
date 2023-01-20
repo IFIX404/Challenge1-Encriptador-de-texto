@@ -1,35 +1,40 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
-  <title>Encriptador de texto</title>
-</head>
-<body>
-  <header>
-    <img class="logo" src="imagenes/Logo.png" alt="logo-pagina">
-  </header>
-  <main>
-    <section>
-      <textarea class="text" cols="30" rows="10" required placeholder="Ingrese el texto aqui"></textarea>
-      <div>
-        <h6 class="information">Solo letras minúsculas y sin acentos</h6>
-      </div>
-      <div class="buttons">
-        <button class="encrypt">Encriptar</button>
-        <button class="decrypt">Desencriptar</button>
-      </div>
-    </section>
-    <section>
-      <textarea class="textview" cols="20" rows="10" pla></textarea>
-      <div>
-        <button class="copy">Copiar</button>
-      </div>
-    </section>
-  </main>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet"/>
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="imagenes/Logo.png" alt="logo-pagina" />
+    </header>
+    <main>
+      <section class="first-section">
+        <textarea class="text" form="txt" cols="38" rows="10" required placeholder="ingrese el texto aqui"></textarea>
+        <div class="clarification">
+          <img src="imagenes/Vector.png" />
+          <h6>Solo letras minúsculas y sin acentos</h6>
+        </div>
+        <div class="buttons">
+          <button class="encrypt">Encriptar</button>
+          <button class="decrypt">Desencriptar</button>
+        </div>
+      </section>
+      <section class="second-section">
+        <textarea class="textview" cols="20" rows="10"></textarea>
+        <div class="information">
+          <h2>Ningún mensaje fue encontrado</h2>
+          <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+        </div>
+        <div>
+          <button class="copy">Copiar</button>
+        </div>
+      </section>
+    </main>
+  </body>
+  </html>

@@ -1,15 +1,14 @@
 * {
   background: #E5E5E5;
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
 }
 .logo {
-  padding-top: 10px;
-  margin-left: 10px;
-  width: 10%;
+  padding-top: 32px;
+  margin-left: 76px;
 }
 main {
   display: flex;
@@ -19,30 +18,30 @@ main {
 .text {
   border: none;
   color: #0A3871;
-  margin-top: 90px;
+  margin-top: 79px;
+  margin-left: 70px;
   text-transform: lowercase;
   outline: none;
+  resize: none;
 }
 ::placeholder {
   color: #0A3871;
 }
-.textview {
-  background: #FFFFFF;
-  background-image: url(imagenes/Muñeco.png);
-  background-repeat: no-repeat;
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  border-radius: 32px;
-  color: #0A3871;
-  margin-left: 98px;
-  margin-top: 20px;
-  padding-left: 20px;
-  position: fixed;
-  border: none;
-  outline: none;
+.clarification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-left: 70px;
+}
+.clarification h6{
+  font-size: 12px;
+  color: #495057;
+  opacity: 0.8;
 }
 .buttons {
   display: flex;
-  margin-top: 20px;
+  margin-left: 70px;
 }
 .encrypt {
   width: 328px;
@@ -65,14 +64,156 @@ main {
   margin-left: 30px;
   cursor: pointer;
 }
+.textview {
+  background: #FFFFFF;
+  background-image: url(imagenes/Muñeco.png);
+  background-position: 35px 130px;
+  background-repeat: no-repeat;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  color: #0A3871;
+  margin-left: 80px;
+  border: none;
+  outline: none;
+  height: 750px;
+  width: 400px;
+  resize: none;
+}
+.information {
+  position: absolute;
+  top: 525px;
+  margin-left: 102px;
+  width: 350px;
+  text-align: center;
+  background: none;
+}
+.information h2 {
+  font-size: 24px;
+  background: none;
+  font-weight: bold;
+}
+.information h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #495057;
+  background: none;
+}
 .copy {
   border: 1px solid #0A3871;
   border-radius: 24px;
-  width: 336px;
+  font-size: 16px;
+  width: 350px;
   height: 67px;
   color: #0A3871;
   position: absolute;
-  margin-top: 402px;
-  margin-left: 100px;
+  top: 750px;
+  margin-left: 102px;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .logo {
+    padding-top: 72px;
+    margin-left: 40px;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .text {
+    margin-top: 79px;
+    margin-left: 20px;
+  }
+  .clarification {
+    gap: 8px;
+    margin-left: 20px;
+  }
+  .buttons {
+    display: flex;
+    margin-left: 20px;
+  }
+  .encrypt {
+    width: 332px;
+    height: 67px;
+  }
+  .decrypt {
+    width: 332px;
+    height: 67px;
+    margin-left: 30px;
+  }
+  .textview {
+    background-image: none;
+    margin-top: 54px;
+    margin-left: 20px;
+    height: 133px;
+    width: 694px;
+  }
+  .information {
+    top: 890px;
+    margin-left: 50px;
+    width: 624px;
+  }
+  .copy {
+    width: 600px;
+    top: 1055px;
+    margin-left: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .logo {
+    padding-top: 24px;
+    margin-left: 12px;
+  }
+  main {
+    flex-direction: column;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .one {
+    width: 375px;
+  }
+  .text {
+    width: 375;
+    margin-top: 79px;
+    margin-left: 40px;
+  }
+  .clarification {
+    width: 240px;
+    margin-left: 40px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+  }
+  .encrypt {
+    width: 343px;
+    height: 67px;
+    margin-bottom: 20px;
+  }
+  .decrypt {
+    width: 343px;
+    height: 67px;
+    margin-left: 0px;
+  }
+  .second-section {
+    width: 375px;
+  }
+  .textview {
+    background-image: none;
+    margin-left: 0px;
+    height: 186px;
+    width: 327px;
+  }
+  .information {
+    top: 924px;
+    margin-left: 55px;
+    width: 263px;
+  }
+  .copy {
+    position: relative;
+    margin: 0px;
+    width: 327px;
+    top: 40px;
+  }
 }
