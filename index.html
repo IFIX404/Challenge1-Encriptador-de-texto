@@ -15,18 +15,18 @@
     </header>
     <main>
       <section class="first-section">
-        <textarea class="text" form="txt" cols="38" rows="10" required placeholder="ingrese el texto aqui"></textarea>
+        <textarea class="text" id="textarea1" form="txt" cols="38" rows="10" required placeholder="ingrese el texto aqui"></textarea>
         <div class="clarification">
           <img src="imagenes/Vector.png" />
           <h6>Solo letras minúsculas y sin acentos</h6>
         </div>
         <div class="buttons">
-          <button class="encrypt">Encriptar</button>
-          <button class="decrypt">Desencriptar</button>
+          <button class="encrypt" onclick="encrypt_text(event)">Encriptar</button>
+          <button class="decrypt" onclick="encrypt_text(event)">Desencriptar</button>
         </div>
       </section>
       <section class="second-section">
-        <textarea class="textview" cols="20" rows="10"></textarea>
+        <textarea class="textview" id="textview" cols="20" rows="10" readonly></textarea>
         <div class="information">
           <h2>Ningún mensaje fue encontrado</h2>
           <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
@@ -36,5 +36,39 @@
         </div>
       </section>
     </main>
+    <script>
+      const encriptar = {
+        "a": "ai",
+        "e": "enter",
+        "i": "imes",
+        "o": "ober",
+        "u": "ufat",
+      }
+
+      const desencriptar = {
+        "ai": "a",
+        "enter": "e",
+        "imes": "i",
+        "ober": "o",
+        "ufat": "u",
+      }
+
+      function encrypt_text(event) {
+      var text = document.getElementById("textarea1").value;
+      var letters = event.target.innerHTML === "Encriptar" ? encriptar : desencriptar;
+      for (let letter in letters) {
+        text = text.replace(new RegExp(letter, "g"), letters[letter]);
+      }
+      if (document.getElementById("textarea1").value === "") {
+      return;
+      }
+      if(event.target.innerHTML === "Encriptar"){
+        document.getElementsByClassName("information")[0].style.display = "none"
+      }else if(event.target.innerHTML === "Desencriptar"){
+        document.getElementsByClassName("information")[0].style.display = "none"
+      }
+      document.getElementById("textview").value = text;
+    }
+    </script>
   </body>
   </html>
