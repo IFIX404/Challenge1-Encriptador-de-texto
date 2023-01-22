@@ -16,7 +16,7 @@
     </header>
     <main>
       <section class="first-section">
-        <textarea class="text" id="textarea1" form="txt" cols="38" rows="10" required placeholder="ingrese el texto aqui"></textarea>
+        <textarea class="text" cols="38" rows="10" required placeholder="ingrese el texto aqui"></textarea>
         <div class="clarification">
           <img src="imagenes/Vector.png" />
           <h6>Solo letras minúsculas y sin acentos</h6>
@@ -27,13 +27,13 @@
         </div>
       </section>
       <section class="second-section">
-        <textarea class="textview" id="textview" cols="20" rows="10" readonly></textarea>
+        <textarea class="textview" cols="20" rows="10" readonly></textarea>
         <div class="information">
           <h2>Ningún mensaje fue encontrado</h2>
           <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
         </div>
         <div>
-          <button class="copy">Copiar</button>
+          <button class="copy" onclick="copy_text(event)">Copiar</button>
         </div>
       </section>
     </main>
