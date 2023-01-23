@@ -113,7 +113,7 @@ main {
   margin-left: 106px;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media screen and (min-width:768px) and (max-width: 1023px) {
   .logo {
     padding-top: 72px;
     margin-left: 40px;
@@ -162,7 +162,7 @@ main {
     margin-left: 60px;
   }
 }
-@media (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .logo {
     padding-top: 24px;
     margin-left: 12px;
@@ -179,6 +179,7 @@ main {
     width: 375;
     margin-top: 79px;
     margin-left: 40px;
+    text-align: left;
   }
   .clarification {
     width: 240px;
@@ -204,18 +205,19 @@ main {
   }
   .textview {
     background-image: none;
-    margin-left: 0px;
+    margin-left: 30px;
+    margin-top: 40px;
     height: 186px;
     width: 327px;
   }
   .information {
     top: 924px;
-    margin-left: 55px;
+    margin-left: 75px;
     width: 263px;
   }
   .copy {
     position: relative;
-    margin: 0px;
+    margin-left: 30px;
     width: 327px;
     top: 40px;
   }
